@@ -40,19 +40,19 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-          {/* <Image
-          src={'/images/logo.png'}
+          <Image
+          src={'/images/new-logo.png'}
           width={100}
           height={50}
           
-          /> */}
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
+          />
+            {/* <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
               CC
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Career Crave</h1>
               <p className="text-xs text-gray-600">Education Centre</p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
