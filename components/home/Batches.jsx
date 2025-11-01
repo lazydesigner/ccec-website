@@ -30,7 +30,7 @@ export default function Batches() {
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
               {/* Batch Image/Icon */}
-              <div className={`relative h-48 bg-gradient-to-br ${batchColors[index]} flex items-center justify-center`}> 
+              <div className={`relative h-52 sm:h-76 md:h-48 bg-gradient-to-br ${batchColors[index]} flex items-center justify-center`}> 
                   <Image
                   src={batch.images} 
                   fill={true}

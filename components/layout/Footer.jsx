@@ -99,18 +99,21 @@ export default function Footer() {
               </li>
             </ul>
 
+
+
+
             {/* Social Media */}
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+              <a href="https://www.facebook.com/cceciitjee" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+              <a href="https://www.instagram.com/careercrave" className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition">
+              <a href="https://www.youtube.com/@katiyarshravan" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+              <a href="https://x.com/careercrave" className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>

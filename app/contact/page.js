@@ -35,13 +35,13 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20 md:min-h-[250px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/channels4_banner.jpg')" }}>
+        {/* <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Get in touch with us for admissions, queries, or any information
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* Contact Section */}
@@ -151,7 +151,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="bg-white rounded-xl shadow-lg p-8" id='contactUs'>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
                 
                 {submitted && (

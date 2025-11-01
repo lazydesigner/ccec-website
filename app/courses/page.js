@@ -13,13 +13,13 @@ export default function CoursesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20 md:min-h-[250px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/channels4_banner.jpg')" }}>
+        {/* <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Courses</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Comprehensive programs designed to help you crack JEE Main & Advanced
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* About JEE Section */}
@@ -157,7 +157,7 @@ export default function CoursesPage() {
                       ))}
                     </ul>
                     <Link
-                      href="/contact"
+                      href="/contact#contactUs"
                       className="inline-block w-full text-center mt-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
                     >
                       Enroll Now
@@ -210,7 +210,7 @@ export default function CoursesPage() {
                   </ul>
                 </div>
                 <Link
-                  href="/contact"
+                  href="https://play.google.com/store/apps/details?id=com.careercrave.academy&hl=en_IN"
                   className="inline-block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition text-sm"
                 >
                   Enroll Now

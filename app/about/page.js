@@ -12,13 +12,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20 md:min-h-[250px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/channels4_banner.jpg')" }}>
+        {/* <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">About Career Crave</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Building IIT dreams since 2010 with dedication, innovation, and excellence
           </p>
-        </div>
+        </div> */}
       </section>
 
       {/* About CCEC Section */}

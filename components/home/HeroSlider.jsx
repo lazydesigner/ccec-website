@@ -11,22 +11,28 @@ const slides = [
     title: "Transform Your IIT-JEE Dreams Into Reality",
     subtitle: "Expert guidance from IET Lucknow alumnus Er. Shravan Katiyar",
     description: "Building conceptual clarity since 2010 with proven teaching methodologies",
-    bgGradient: "from-blue-600 to-purple-600",
-    cta: "Explore Courses"
+    bgGradient: "from-blue-600/80 to-purple-600/80",
+    image: "/images/banner/home1.jpg",
+    cta: "Explore Courses",
+    url: "/courses"
   },
   {
     title: "Comprehensive JEE Main & Advanced Coaching",
     subtitle: "Two-way communication, concept-based learning",
     description: "We don't just teach, we ensure concepts are internalized",
-    bgGradient: "from-purple-600 to-pink-600",
-    cta: "View Results"
+    bgGradient: "from-purple-600/80 to-pink-600/80",
+    image: "/images/banner/home3.webp",
+    cta: "View Results",
+    url: "/results"
   },
   {
     title: "Join India's Top Engineering Aspirants",
     subtitle: "Quality education for serious IIT aspirants",
     description: "From a handful of students to one of Kanpur's leading institutes",
-    bgGradient: "from-indigo-600 to-blue-600",
-    cta: "Contact Us"
+    bgGradient: "from-purple-600/80 to-pink-600/80",
+    image: "/images/banner/home5.jpg",
+    cta: "Contact Us",
+    url: "/contact"
   }
 ];
 
@@ -52,37 +58,43 @@ export default function HeroSlider() {
   return (
     <div className="relative h-[600px] overflow-hidden">
       {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
+  <div
+    key={index}
+    className={`absolute inset-0 transition-opacity duration-1000 ${
+      index === currentSlide ? 'opacity-100' : 'opacity-0'
+    }`}
+    style={{
+      backgroundImage: `url(${slide.image})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }}
+  >
+    <div className={`absolute z-10 inset-0 bg-gradient-to-r ${slide.bgGradient}`}>
+      <div className="absolute inset-0 bg-black opacity-20"></div>
+    </div>
+
+    <div className="relative z-20 container mx-auto px-4 h-full flex items-center">
+      <div className="max-w-3xl text-white">
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
+          {slide.title}
+        </h1>
+        <p className="text-xl md:text-2xl mb-4 font-semibold">
+          {slide.subtitle}
+        </p>
+        <p className="text-lg mb-8 text-gray-100">
+          {slide.description}
+        </p>
+        <Link
+          href={slide.url}
+          className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg"
         >
-          <div className={`absolute inset-0 bg-gradient-to-r ${slide.bgGradient}`}>
-            <div className="absolute inset-0 bg-black opacity-20"></div>
-          </div>
-          
-          <div className="relative container mx-auto px-4 h-full flex items-center">
-            <div className="max-w-3xl text-white">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
-                {slide.title}
-              </h1>
-              <p className="text-xl md:text-2xl mb-4 font-semibold">
-                {slide.subtitle}
-              </p>
-              <p className="text-lg mb-8 text-gray-100">
-                {slide.description}
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg"
-              >
-                {slide.cta}
-              </Link>
-            </div>
-          </div>
-        </div>
-      ))}
+          {slide.cta}
+        </Link>
+      </div>
+    </div>
+  </div>
+))}
+
 
       {/* Navigation Arrows */}
       <button
