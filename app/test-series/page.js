@@ -13,14 +13,30 @@ export default function TestSeriesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      {/* <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Test Series</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Comprehensive test series designed to simulate actual JEE exam conditions
           </p>
         </div>
-      </section>
+      </section> */}
+
+      <section
+  className="relative bg-cover bg-center bg-no-repeat text-white min-h-[200px] md:min-h-[550px] py-20"
+  style={{ backgroundImage: "url('/images/test.jpg')" }} // 👈 replace with your image path
+>
+  {/* Gradient overlay */}
+  {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-50/80 to-purple-50/80"></div> */}
+
+  <div className="relative container mx-auto px-4 text-center">
+    {/* <h1 className="text-5xl font-bold mb-4">Test Series</h1>
+    <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+      Comprehensive test series designed to simulate actual JEE exam conditions
+    </p> */}
+  </div>
+</section>
+
 
       {/* Why Test Series */}
       <section className="py-16">

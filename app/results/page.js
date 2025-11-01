@@ -77,13 +77,13 @@ export default function ResultsPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section
-  className="relative bg-gradient-to-r from-yellow-500/80 via-orange-500/80 to-red-500/80 text-white min-h-[550px] py-40 bg-cover bg-center bg-no-repeat"
+  className="relative bg-gradient-to-r from-yellow-500/80 via-orange-500/80 to-red-500/80 text-white  min-h-[200px] md:min-h-[700px] py-2 md:py-20 bg-cover bg-center bg-no-repeat"
   style={{ backgroundImage: "url('/images/main.jpg')" }} // 👈 replace with your image path
 >
   <div className="absolute inset-0 bg-black/30"></div> {/* optional dark overlay */}
   
   <div className="relative container mx-auto px-4 text-center">
-    <Trophy className="h-20 w-20 mx-auto mb-6" />
+    {/* <Trophy className="h-20 w-20 mx-auto mb-6" /> */}
     {/* <h1 className="text-5xl font-bold mb-4">Our Proud Results</h1>
     <p className="text-xl text-yellow-100 max-w-3xl mx-auto">
       Celebrating the success of our students who made it to prestigious IITs and NITs
