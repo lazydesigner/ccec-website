@@ -34,7 +34,7 @@ export default function TestSeries() {
             </ul>
 
             <Link
-              href="/test-series#online"
+              href="https://testpanelcareercrave.indiacure.in/"
               className="inline-block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
             >
               Enroll Now
