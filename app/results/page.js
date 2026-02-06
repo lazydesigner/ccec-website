@@ -6,9 +6,143 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function ResultsPage() {
-  const [activeTab, setActiveTab] = useState('main');
+  const [activeTab, setActiveTab] = useState('advanced');
 
   const yearWiseResults = [
+    {
+      year: "2025",
+      type: "main",
+      totalSelections: 0,
+      iitSelections: 0,
+      nitSelections: 0,
+      topRank: "99.966%ile",
+      toppers: [
+        {
+          name: "Aryan Trivedi",
+          rank: "99.966%ile",
+          School: "Subhash Public School",
+          images: "/images/Aryan-Trivedi-99.966.png"
+        },
+        {
+          name: "Krish Pandey",
+          rank: "99.962%ile",
+          School: "BSS Education Centre",
+          images: "/images/Krish-Pandey-99.962.png"
+        },
+        {
+          name: "Suyash Tripathi",
+          rank: "99.92%ile",
+          School: "BSS Education Centre",
+          images: "/images/Suyash-Tripathi-99.92.png"
+        },
+        {
+          name: "Parth Grover",
+          rank: "99.90%ile",
+          School: "Swaraj India School",
+          images: "/images/Parth-Grover-99.90.png"
+        },
+        {
+          name: "Prabhleen Kaur",
+          rank: "99.86%ile",
+          School: "DPS Kalyanpur",
+          images: "/images/Prabhleen-Kaur-99.86.png"
+        },
+        {
+          name: "Bharat Gupta",
+          rank: "99.79%ile",
+          School: "Jaipuria School",
+          images: "/images/Bharat-Gupta-99.79.png"
+        },
+        {
+          name: "Devashish Tripathi",
+          rank: "99.62%ile",
+          School: "Sir Padampat Singhania",
+          images: "/images/Devashish-Tripathi-99.62.png"
+        },
+        {
+          name: "Priyansh Roongta",
+          rank: "99.55%ile",
+          School: "Jaipuria School",
+          images: "/images/Priyansh-Roongta-99.55.png"
+        },
+        {
+          name: "Swastik Pandey",
+          rank: "99.50%ile",
+          School: "Swaraj India School",
+          images: "/images/Swastik-Pandey-99.50.png"
+        },
+        {
+          name: "Suryansh Gupta",
+          rank: "99.17%ile",
+          School: "DPS Azad Nagar",
+          images: "/images/Suryansh-Gupta-99.17.png"
+        },
+        {
+          name: "Anuja Rathi",
+          rank: "99.00%ile",
+          School: "Sheiling House School",
+          images: "/images/Anuja-Rathi-99.00.png"
+        }
+      ]
+    },
+    {
+      year: "2025",
+      type: "advanced",
+      totalSelections: 0,
+      iitSelections: 0,
+      nitSelections: 0,
+      topRank: "AIR 798",
+      toppers: [
+        {
+          name: "Aryan Trivedi",
+          rank: "AIR 798",
+          School: "Subhash Public School",
+          images: "/images/Aryan-Trivedi-AIR-798.png"
+        },
+        {
+          name: "Krish Pandey",
+          rank: "AIR 833",
+          School: "BSS Education Centre",
+          images: "/images/Krish-Pandey-AIR-833.png"
+        },
+        {
+          name: "Bharat Gupta",
+          rank: "AIR 1973",
+          School: "Jaipuria School",
+          images: "/images/Bharat-Gupta-AIR-1973.png"
+        },
+        {
+          name: "Suyash Tripathi",
+          rank: "AIR 2081",
+          School: "BSS Education Centre",
+          images: "/images/Suyash-Tripathi-AIR-2081.png"
+        },
+        {
+          name: "Parth Grover",
+          rank: "AIR 2623",
+          School: "Swaraj India School",
+          images: "/images/Parth-Grover-AIR-2623.png"
+        },
+        {
+          name: "Priyansh Roongta",
+          rank: "AIR 5831",
+          School: "Jaipuria School",
+          images: "/images/Priyansh-Roongta-AIR-5831.png"
+        },
+        {
+          name: "Anuja Rathi",
+          rank: "AIR 8350",
+          School: "Shallig House School",
+          images: "/images/Anuja-Rathi-AIR-8350.png"
+        },
+        {
+          name: "Prabhleen Kaur",
+          rank: "AIR 9394",
+          School: "DPS Kalyanpur",
+          images: "/images/Prabhleen-Kaur-AIR-9394.png"
+        }
+      ]
+    },
     {
       year: "2024",
       type: "main",
@@ -310,7 +444,7 @@ export default function ResultsPage() {
         style={{ backgroundImage: "url('/images/main.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative container mx-auto px-4 text-center"> 
+        <div className="relative container mx-auto px-4 text-center">
         </div>
       </section>
 
@@ -343,24 +477,22 @@ export default function ResultsPage() {
           {/* Tab Buttons */}
           <div className="flex justify-center gap-4 mb-12">
             <button
-              onClick={() => setActiveTab('main')}
-              className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${
-                activeTab === 'main'
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-xl scale-105'
-                  : 'bg-white text-gray-700 shadow hover:shadow-lg'
-              }`}
-            >
-              JEE Main Results
-            </button>
-            <button
               onClick={() => setActiveTab('advanced')}
-              className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${
-                activeTab === 'advanced'
+              className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${activeTab === 'advanced'
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-xl scale-105'
                   : 'bg-white text-gray-700 shadow hover:shadow-lg'
-              }`}
+                }`}
             >
               JEE Advanced Results
+            </button>
+            <button
+              onClick={() => setActiveTab('main')}
+              className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${activeTab === 'main'
+                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-xl scale-105'
+                  : 'bg-white text-gray-700 shadow hover:shadow-lg'
+                }`}
+            >
+              JEE Main Results
             </button>
           </div>
 
@@ -405,20 +537,18 @@ export default function ResultsPage() {
                     {yearData.toppers.map((student, idx) => (
                       <div
                         key={idx}
-                        className={`rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ${
-                          idx === 10000
+                        className={`rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ${idx === 10000
                             ? 'bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-400'
                             : 'bg-gradient-to-br from-gray-50 to-white border border-gray-200'
-                        }`}
+                          }`}
                       >
                         <div className="flex items-start justify-between mb-4">
                           <div className="flex items-center space-x-3">
                             <div
-                              className={`w-16 h-16 rounded-full flex overflow-hidden items-center justify-center text-white font-bold text-lg ${
-                                idx === 10000
+                              className={`w-16 h-16 rounded-full flex overflow-hidden items-center justify-center text-white font-bold text-lg ${idx === 10000
                                   ? 'bg-gradient-to-br from-yellow-500 to-orange-500'
                                   : 'bg-gradient-to-br from-blue-500 to-purple-500'
-                              }`}
+                                }`}
                             >
                               <Image
                                 src={student.images}

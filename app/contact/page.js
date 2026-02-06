@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Send, MessageSquare } from 'lucide-react';
 import { CONTACT_INFO } from '@/lib/constants';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -43,6 +44,14 @@ export default function ContactPage() {
           </p>
         </div> */}
       </section>
+      <div className="relative h-[106px] sm:h-[190px] md:h-[500px] mb-2">
+        <Image
+          src="/images/banner/05.jpg"
+          alt="IET Lucknow"
+          fill
+          className="object-cover  shadow-lg"
+        />
+        </div>
 
       {/* Contact Section */}
       <section className="py-16">
@@ -259,6 +268,14 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <div className="relative h-[106px] sm:h-[190px] md:h-[400px] mb-2">
+        <Image
+          src="/images/banner/01.jpg"
+          alt="IET Lucknow"
+          fill
+          className="object-cover  shadow-lg"
+        />
+        </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@
 import { Clock, Calendar, Target, CheckCircle, Monitor, BookOpen, Users, Award } from 'lucide-react';
 import { BATCHES_DATA, ONLINE_COURSES } from '@/lib/constants';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Courses - Career Crave Education Centre',
@@ -21,6 +22,15 @@ export default function CoursesPage() {
           </p>
         </div> */}
       </section>
+
+      <div className="relative h-[106px] sm:h-[190px] md:h-[500px] mb-2">
+        <Image
+          src="/images/banner/04.jpg"
+          alt="IET Lucknow"
+          fill
+          className="object-cover  shadow-lg"
+        />
+        </div>
 
       {/* About JEE Section */}
       <section className="py-16">

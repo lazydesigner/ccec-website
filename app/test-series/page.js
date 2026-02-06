@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Monitor, FileText, CheckCircle, Clock, BarChart, Target } from 'lucide-react';
 import { TEST_SERIES } from '@/lib/constants';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Test Series - Career Crave Education Centre',
@@ -36,6 +37,14 @@ export default function TestSeriesPage() {
     </p> */}
   </div>
 </section>
+<div className="relative h-[106px] sm:h-[190px] md:h-[400px] mb-2">
+        <Image
+          src="/images/banner/03.jpg"
+          alt="IET Lucknow"
+          fill
+          className="object-cover  shadow-lg"
+        />
+        </div>
 
 
       {/* Why Test Series */}
